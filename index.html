@@ -10,13 +10,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link href="css/styles.css" rel="stylesheet">
-      <script src="js/script.js"></script>
+      <script src="js/script.js" defer></script>
       <title>Odin's Recipes</title>
 </head>
 
 <body>
       <header>
-            <nav id="navigation-desktop" class="main-background-color">
+            <nav id="navigation-desktop" class="colored-section">
                   <section class="topnav width-wrapper">
                         <section class="logo">
                               <a href="index.html">
@@ -31,7 +31,7 @@
                   </section>
             </nav>
 
-            <nav id="navigation-mobile" class="main-background-color">
+            <nav id="navigation-mobile" class="colored-section">
                   <section class="topnav width-wrapper">
                         <section class="logo">
                               <a href="index.html">
@@ -45,11 +45,9 @@
                         </section>
                   </section>
                   <section id="menu-elements-mobile" class="main-background">
-                        <ul>
-                              <li><a href="pasta-primavera.html">Pasta primavera</a></li>
-                              <li><a href="easy-honey-meatballs.html">Easy honey meatballs</a></li>
-                              <li><a href="kaema-curry.html">Kaema-curry</a></li>
-                        </ul>
+                        <a href="pasta-primavera.html">Pasta primavera</a>
+                        <a href="easy-honey-meatballs.html">Easy honey meatballs</a>
+                        <a href="kaema-curry.html">Kaema-curry</a>
                   </section>
             </nav>
       </header>
@@ -57,63 +55,45 @@
       <main>
             <section class="width-wrapper recipes-reccomendations">
                   <h1 class="heading-centered accent header-space">Our top picks for this month</h1>
-                  <section class="responsive-grid">
-                        <article class="recipe-view">
-                              <a href='pasta-primavera.html'>
-                                    <img class="recipe-image" src="images/pasta-primavera.jpeg" alt="A pasta primavera dish">
-                              </a>
-                              <section class="flex">
-                                    <div class="user-avatar">
-                                          <i class="fa-solid fa-user fa-2x"></i>
-                                    </div>
-                                    <div class="recipe-details">
-                                          <a href='pasta-primavera.html'>
-                                                <h3 class="recipe-detail">Pasta Primavera</h3>
-                                          </a>
-                                          <h4 class="recipe-detail text-secondary">Published by Marco Pierre White</h4>
-                                          <h4 class="recipe-detail text-secondary">Liked by 4263 people</h4>
-                                    </div>
+                  <div class="responsive-grid">
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/pasta-primavera.jpeg" alt="A pasta primavera dish">
+                              <section class="colored-section infobar">
+                                    <a href='pasta-primavera.html'>
+                                          <h3 class="m-0 ">Pasta Primavera</h3>
+                                    </a>
+                                    <h4 class="m-0 text-secondary">By Marco Pierre White</h4>
+                                    <h4 class="m-0 text-secondary">Liked by 4263 people</h4>
                               </section>
                         </article>
-
-                        <article class="recipe-view">
+                        <article class="image-infobar-container">
                               <img class="recipe-image" src="images/easy-honey-meatballs.jpeg" alt="Honey soy glazed meatballs">
-                              <section class="flex">
-                                    <div class="user-avatar">
-                                          <i class="fa-solid fa-user fa-2x"></i>
-                                    </div>
-                                    <div class="recipe-details">
-                                          <h3 class="recipe-detail">Easy honey - soy glazed meatballs</h3>
-                                          <h4 class="recipe-detail text-secondary">Published by Marco Alain Ducasse</h4>
-                                          <h4 class="recipe-detail text-secondary">Liked by 3372 people</h4>
-                                    </div>
+                              <section class="colored-section infobar">
+                                    <a href='easy-honey-meatballs.html'>
+                                          <h3 class="m-0">Easy honey meatballs</h3>
+                                    </a>
+                                    <h4 class="m-0 text-secondary">By Marco Alain Ducasse</h4>
+                                    <h4 class="m-0 text-secondary">Liked by 3372 people</h4>
                               </section>
                         </article>
 
-                        <article class="recipe-view">
-                              <a href='kaema-curry.html'>
-                                    <img class="recipe-image" src="images/keema-curry.jpeg" alt="Kaema curry">
-                              </a>
-                              <section class="flex">
-                                    <div class="user-avatar">
-                                          <i class="fa-solid fa-user fa-2x"></i>
-                                    </div>
-                                    <div class="recipe-details">
-                                          <a href='kaema-curry.html'>
-                                                <h3 class="recipe-detail">Keema curry</h3>
-                                          </a>
-                                          <h4 class="recipe-detail text-secondary">Created by Martin Berasategui</h4>
-                                          <h4 class="recipe-detail text-secondary">Liked by 3001 people</h4>
-                                    </div>
+                        <article class="image-infobar-container">
+                              <img class="recipe-image" src="images/keema-curry.jpeg" alt="Kaema curry">
+                              <section class="colored-section infobar">
+                                    <a href='kaema-curry.html'>
+                                          <h3 class="m-0">Keema curry</h3>
+                                    </a>
+                                    <h4 class="m-0 text-secondary">By Martin Berasategui</h4>
+                                    <h4 class="m-0 text-secondary">Liked by 3001 people</h4>
                               </section>
                         </article>
-                  </section>
+                  </div>
             </section>
       </main>
 
 
 
-      <footer class="main-background-color">
+      <footer class="colored-section">
             <section class="footer width-wrapper">
                   <section class="logo">
                         <a href="index.html">
@@ -126,7 +106,9 @@
                         </a>
                   </section>
             </section>
-            <h5 class="heading-centered m-0">Created by Nikos Makris713</h5>
+            <a aria-label="Website developer Github profile" href="https://github.com/NikosMakris713">
+                  <h5 class="heading-centered m-0">Developed by Nikos Makris713</h5>
+            </a>
       </footer>
 
 </body>
